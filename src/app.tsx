@@ -1,7 +1,15 @@
+import { BrowserRouter, Route, Routes } from "react-router";
+import { HomeScreen } from "./views";
+import { AppProvider } from "./providers";
+
 export default function App() {
     return (
-        <>
-            <h1>Hello World</h1>
-        </>
+        <AppProvider>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<HomeScreen />} />
+                </Routes>
+            </BrowserRouter>
+        </AppProvider>
     )
 }
