@@ -1,6 +1,7 @@
-import { BrowserRouter, Route, Routes } from "react-router";
-import { HomeScreen } from "./views";
-import { AppProvider } from "./providers";
+import { BrowserRouter, Route, Routes } from 'react-router'
+import { HomeScreen } from './views'
+import { AppProvider } from './providers'
+import './i18n/i18n'
 
 export default function App() {
     return (

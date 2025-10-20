@@ -24,6 +24,7 @@ export default defineConfig([
             'react/react-in-jsx-scope': 'off',
             'unicorn/prevent-abbreviations': 'off',
             'unicorn/filename-case': 'off',
+            'unicorn/prefer-export-from': 'off',
         },
     },
     {
