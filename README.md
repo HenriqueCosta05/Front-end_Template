@@ -6,11 +6,11 @@ Esse projeto tem o objetivo de reunir lógicas de inicialização de projetos fr
 
 - [x] Configurações de `linting`, usando EsLint e Prettier.
 - [x] Hooks de `pré-commit`, que executam scripts antes de realizar um commit ao repositório, utilizando Husky e GitHub Actions.
-- [ ] Estrutura inicial de uma arquitetura, utilizando design system baseado no `React Spectrum`, da Adobe.
+- [X] Estrutura inicial de uma arquitetura, utilizando design system baseado no `React Spectrum`, da Adobe.
 - [ ] Configurações avançadas de estilo com CSS, tais como animações e transições, efeitos, etc.
 - [ ] Configurações de accessibilidade, usando `ARIA Attributes`.
 - [ ] Métricas de performance, usando boas práticas indicadas pelo `MDN` e `React`.
-- [ ] Gerenciador de Estados performático, usando `Context API` e recursos do `React`.
+- [X] Gerenciador de Estados performático, usando `Context API` e recursos do `React`.
 
 ## Motivação
 
