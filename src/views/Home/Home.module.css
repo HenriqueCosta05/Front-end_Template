@@ -18,6 +18,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation-duration: 2s;
+    animation-name: attention-seeker-1;
 }
 
 .table {
@@ -33,4 +35,14 @@
 .tableCell {
     border: 1px solid #eee;
     padding: 12px 15px;
+}
+
+@keyframes attention-seeker-1 {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3%);
+    }
 }

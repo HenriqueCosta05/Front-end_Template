@@ -4,7 +4,7 @@ import loaderStyles from './Loader.module.css'
 const Loader = () => {
     return (
         <div className={loaderStyles.loader}>
-            <ProgressBar isIndeterminate />
+            <ProgressBar isIndeterminate aria-label="Loading..." />
         </div>
     )
 }
