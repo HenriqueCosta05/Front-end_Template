@@ -1,21 +1,17 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
 import { HomeScreen } from './views'
-import { AppProvider } from './providers'
 import './i18n/i18n'
-import { Profiler } from 'react'
-import { useProfiler } from './hooks'
+import { Provider } from 'react-redux'
+import { store } from './store/store'
 
 export default function App() {
-    const { onRender } = useProfiler('App')
     return (
-        <Profiler id="App" onRender={onRender}>
-            <AppProvider>
-                <BrowserRouter>
-                    <Routes>
-                        <Route path="/" element={<HomeScreen />} />
-                    </Routes>
-                </BrowserRouter>
-            </AppProvider>
-        </Profiler>
+        <Provider store={store}>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<HomeScreen />} />
+                </Routes>
+            </BrowserRouter>
+        </Provider>
     )
 }
